@@ -1,0 +1,46 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: @nav-height;
+
+  & .left {
+    & i {
+      margin-right: 20px;
+      font-size: 25px;
+      cursor: pointer;
+      top: 2px;
+      position: relative;
+    }
+
+    & span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  & .right {
+    display: flex;
+
+    & .phone {
+      margin-right: 25px;
+      padding: 5px 15px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: @primary-color;
+    }
+
+    & span {
+      font-size: 14px;
+      border-bottom: 1px dotted #000;
+    }
+
+    & i {
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+}
