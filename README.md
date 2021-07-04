@@ -1,2 +1,2 @@
 # less-project
-# folder public has priduction version
+# folder public has a production version
