@@ -1,0 +1,108 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#solutions {
+  width: @view-port;
+  margin: 0 auto;
+  padding-top: 85px;
+  padding-bottom: 115px;
+
+  & h2 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  & .bords {
+    display: flex;
+    justify-content: space-around;
+
+    & .bord {
+      background-color: #ffd200;
+      border-radius: 5px;
+      padding: 5px;
+      width: 25%;
+
+      & .bestseller {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        & > div {
+          position: absolute;
+          background-color: #ffd200;
+        }
+
+        & .text {
+          font-size: 16px;
+          font-weight: bold;
+          color: #e11a27;
+          top: -24px;
+          padding: 6px 30px 0;
+        }
+
+        & .left {
+          transform: rotate(45deg);
+          width: 30px;
+          height: 27px;
+          left: 46px;
+          top: -17px;
+        }
+
+        & .right {
+          transform: rotate(45deg);
+          width: 30px;
+          height: 27px;
+          right: 42px;
+          top: -17px;
+        }
+      }
+
+      & .header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        & h3 {
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+
+      & .content {
+        background-color: #fff;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        position: relative;
+        height: 200px;
+
+        & ul {
+          list-style-image: url("img/checkbox.png");
+
+          & li {
+            & span {
+              padding-left: 10px;
+              position: relative;
+              top: -4px;
+            }
+          }
+        }
+
+        & .price {
+          font-size: 40px;
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          bottom: 10px;
+        }
+      }
+
+      & .footer {
+        font-size: 18px;
+        text-align: center;
+        padding: 15px 0;
+      }
+    }
+  }
+}

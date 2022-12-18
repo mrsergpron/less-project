@@ -1,0 +1,46 @@
+@import "partials/mixins";
+@import "partials/params";
+
+#advantage {
+  background-color: @light-color;
+  padding-top: 70px;
+  padding-bottom: 75px;
+  text-align: center;
+
+  & h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 70px;
+  }
+
+  & .block {
+    width: 1035px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 100px;
+
+    & > div {
+      width: 275px;
+      margin-right: 120px;
+
+      & img {
+        margin-bottom: 25px;
+      }
+
+      & h3 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 22px;
+        line-height: 1.2;
+      }
+
+      & p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.2;
+      }
+    }
+  }
+}
